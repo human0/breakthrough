@@ -39,7 +39,7 @@ jQuery(document).ready(function() {
               });
           });
 
-          function onScroll(event){
+    function onScroll(event){ console.log("here");
               var scrollPos = $(document).scrollTop();
               $('.navbar-default .navbar-nav>li>a').each(function () {
                   var currLink = $(this);

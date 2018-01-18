@@ -16,8 +16,8 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 	
 // Create the email and send the message
-$too = 'emmanuelhuman01@gmail.com';
-$to = 'support@breakthrougharc.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$too = 'sparkdevelopmentteam@gmail.com';
+//$to = 'support@breakthrougharc.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website Contact Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
 //$headers = "From: ".$email_address."\n";
@@ -26,6 +26,6 @@ $headers .= "Reply-To: ".$email_address;
 
 //mail($too,$email_subject,$email_body,$headers);
 if (mail($too,$email_subject,$email_body,$headers)) 
-   echo "Message Sent Succesfull";
-else echo "Problem Sending Message"	;
+   echo "Message Sent Succesfully, have a great day";
+else echo "Problem Sending Message, try again later.";
 ?>
